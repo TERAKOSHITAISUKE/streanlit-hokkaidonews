@@ -22,11 +22,13 @@ def get_data(url):
             # print("-"*10)
         except:
             break
+        
+    return list
 url = 'https://www.hokkaido-np.co.jp/news/n_economy'
     
 st.write('''
         # 北海道新聞[経済]
         ''')
 
-df = pd.DataFrame({'最新情報':list})
+df = pd.DataFrame({'最新情報':get_data(url)})
 st.dataframe(df)
