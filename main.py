@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import streamlit as st
 import pandas as pd
 
-@st.cache
+# @st.cache
 def get_data(url):
     res = requests.get(url)
 
